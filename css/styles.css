@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to right,
+    #101f21,
+    #101f21,
+    #101f21,
+    #101f21,
+    #101f21,
+    #212e31,
+    #333e42,
+    #101f21,
+    #101f21,
+    #9fa2a600,
+    #cfcfd100,
+    #101f21
+  );
+  padding: 0 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+#search-input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  width: 300px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+#search-button,
+#reset-button {
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.content {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/img/new-york.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.iconer {
+  position: absolute;
+  top: 30%;
+  left: 20px;
+}
+.iconer img {
+  width: 32px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #ffffff;
+  text-align: left;
+}
+
+.recommendation-container {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.recommendation-card {
+  width: 300px;
+  background-color: #101f213a;
+}
+
+.recommendation-card p {
+  font-size: 1em;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px;
+}
+
+button {
+  background-color: #101f216e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: #101f21;
+  cursor: pointer;
+  font-size: 16px;
+  float: left;
+}
+
+.about-container {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.about-card {
+  width: 700px;
+  background-color: #101f213a;
+}
+
+.about-card p {
+  font-size: 1em;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px;
+}
+
+.team-block {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  background-color: #212e3121;
+  padding: 0 20px;
+}
+
+.team-title {
+  flex: 1;
+  text-align: left;
+  margin-right: 50px;
+}
+
+.team-members {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.member {
+  text-align: left;
+}
+
+.member-card {
+  display: flex;
+}
+
+.member img {
+  width: 24px;
+  height: 24px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.member button {
+  background-color: #021529;
+  color: white;
+  border: none;
+  padding: 2px 40px;
+  border-radius: px; /* Mer rundade hörn */
+  cursor: pointer;
+}
+
+.contact-container {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contact-form {
+  width: 400px;
+  background-color: #101f2162;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 100%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #ffffff;
+  float: left;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #333;
+}
+.contact-form button {
+  background-color: #017579;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: #101f21;
+}
+
+#destinations-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#destinations-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+#destinations-container h2 {
+  font-size: 1.5em;
+  color: #ffffff;
+  text-align: center;
+}
+#destinations-container p {
+  font-size: 1em;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}

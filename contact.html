@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Travel Recomendation</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="/img/logo.png" alt="TravelBloom Logo">
+
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Enter a destination or keyword">
+      <button id="search-button"> Search</button>
+      <button id="reset-button">Clear</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <div>
+      <div class="iconer">
+        <a href="#"><img src="/img/twitter.png" alt=""></a>
+        <a href=""><img src="/img/facebook.png" alt=""></a>
+        <a href=""><img src="/img/instagram.png" alt=""></a>
+        <a href=""><img src="/img/youtube.png" alt=""></a>
+      </div>
+    </div>
+    <div class="contact-container">
+      <div>
+        <h1>CONTACT US</h1>
+      </div>
+      <div class="about-card">
+        <p>Get in touch</p>
+      </div>
+
+      <div class="contact-form">
+        <form action="submit_form.php" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+              
+    </div>
+    
+
+</body>
+
+</html>
